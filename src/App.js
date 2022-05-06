@@ -1,30 +1,28 @@
 import React from 'react'
 import Contact from './components/Contact';
+import info from './info';
 
 
 function App() {
   return (<div>
     <h1 className="heading">My Contacts</h1>
     <Contact
-      name="Beyonce"
-      img="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
-      alt="avatar_img"
-      tel="+123 456 789"
-      email="b@beyonce.com"
+      name={info[0].name}
+      img={info[0].imgURL}
+      tel={info[0].phone}
+      email={info[0].email}
     />
     <Contact
-      name="Madonna"
-      img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTds5xMDlZn6SR2ufT19rsZvkHpVGGvt8DcZQ&usqp=CAU"
-      alt="avatar_img"
-      tel="+123 44546 689"
-      email="m@madonna.com"
+      name={info[1].name}
+      img={info[1].imgURL}
+      tel={info[1].phone}
+      email={info[1].email}
     />
     <Contact
-      name="Jack Bauer"
-      img="https://pbs.twimg.com/profile_images/625247595825246208/X3XLea04_400x400.jpg"
-      alt="avatar_img"
-      tel="+153 47846 569"
-      email="jack@nowhere.com"
+      name={info[2].name}
+      img={info[2].imgURL}
+      tel={info[2].phone}
+      email={info[2].email}
     />
 
   </div>
